@@ -8,11 +8,6 @@ function ExpenseItem(props) {
   // props is an object that contains the key-value data that is passed in by the parent component
   console.log(props);
 
-  // React only evaluates and renders each component exactly once upon intialisation, hence useState is used to re-evaluate and re-render specific components upon events occuring
-  // useState is a react hook, which must be called directly within the component function
-  // useState accepts the "default value" as a parameter and returns an array containing 2 things: current state of the state variable and function
-  // current state initially holds the "default value" and function is used to change the variable's value
-  // any changes to the state above will result in the component being re-evaluated and re-rendered
   const [title, setTitle] = useState(props.title); // use array destructuring to separate the state and function
 
   let clickHandler = () => {
