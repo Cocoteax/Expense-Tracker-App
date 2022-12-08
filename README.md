@@ -1,7 +1,7 @@
 # Expense-Tracker-App
 
 ## Overview
-Simple expense tracker app.
+Responsive website application that enables users to track and gain insights on their living expenses
 
 ## Tech Stacks Used
 Front-end developed using ReactJS (Developed by separate team) <br/>
