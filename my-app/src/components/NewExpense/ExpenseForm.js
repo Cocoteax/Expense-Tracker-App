@@ -108,6 +108,8 @@ function ExpenseForm(props) {
         </div>
       </div>
       <div className="new-expense__actions">
+        {/* Call the props function to change the isAddNewExpense state in the parent component when onClick occurs */}
+        <button type="button" onClick={props.onCancel}>Cancel</button>
         <button type="submit">Add Expense</button>
       </div>
     </form>

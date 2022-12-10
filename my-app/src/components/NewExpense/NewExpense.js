@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
@@ -16,9 +16,23 @@ function NewExpense(props) {
     props.onAddExpense(expenseData);
   };
 
+  const [isAddNewExpense, setIsAddNewExpense] = useState(false);
+
+  // Function to change state when add expense button is clicked
+  const addExpenseHandler = () => {
+    setIsAddNewExpense(true)
+  };
+
+  // Function to change state when cancel add expense button is clicked
+  // Pass this as a prop to child component ExpenseForm to change state when cancel button is clicked
+  const cancelAddExpenseHandler = () => {
+    setIsAddNewExpense(false);
+  }
+
   return (
     <div className="new-expense">
-      <ExpenseForm onSubmitExpenseData={submitExpenseDataHandler} />
+      {!isAddNewExpense && <button onClick={addExpenseHandler}>Add new expenses</button>}
+      {isAddNewExpense && <ExpenseForm onSubmitExpenseData={submitExpenseDataHandler} onCancel={cancelAddExpenseHandler}/>}
     </div>
   );
 }

@@ -12,15 +12,17 @@ function ExpenseItem(props) {
   // Note that className="expense-item" is now passed as a prop to Card component instead of a CSS class since our wrapper is a custom component
   // Hence, we must apply the CSS className within the Card component
   return (
-    <Card className="expense-item">
-      {/* Pass the props.date to ExpenseDate component */}
-      <ExpenseDate date={props.date} />
-      {/* Use curly braces to dynamically insert data */}
-      <div className="expense-item__description">
-        <h2>{props.title}</h2>
-        <div className="expense-item__price">{props.amount}</div>
-      </div>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        {/* Pass the props.date to ExpenseDate component */}
+        <ExpenseDate date={props.date} />
+        {/* Use curly braces to dynamically insert data */}
+        <div className="expense-item__description">
+          <h2>{props.title}</h2>
+          <div className="expense-item__price">{props.amount}</div>
+        </div>
+      </Card>
+    </li>
   );
 }
 
