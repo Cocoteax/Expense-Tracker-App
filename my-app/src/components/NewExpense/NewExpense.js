@@ -8,10 +8,11 @@ function NewExpense(props) {
   const submitExpenseDataHandler = (userInput) => {
     const expenseData = {
       ...userInput,
+      // Add a id for the expenseData
       id: Math.random(),
     };
 
-    // Pass the expenseData to parent component by calling the prop function and passing in the required data as the argument
+    // Pass the expenseData to parent component App.js by calling the prop function and passing in the required data as the argument
     props.onAddExpense(expenseData);
   };
 

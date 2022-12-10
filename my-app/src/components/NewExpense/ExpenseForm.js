@@ -64,7 +64,7 @@ function ExpenseForm(props) {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    // Pass the expenseData to parent component by calling the prop function and passing in the required data as the argument
+    // Pass the expenseData to parent component NewExpense by calling the prop function and passing in the required data as the argument
     props.onSubmitExpenseData(expenseData);
     // Clear form data after submission, note that we need to bind the states to the value attribute of the input elements
     setEnteredTitle("");

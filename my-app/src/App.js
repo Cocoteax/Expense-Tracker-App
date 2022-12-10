@@ -34,7 +34,7 @@ function App() {
     // Since we update the state based on previous state, we use this syntax to gain access to latest state
     setExpenses((prevState) => {
       // Add new expense to the beginning of INITIAL_EXPENSES array
-      return [expense, ...prevState]
+      return [expense, ...prevState];
     });
     console.log(expense);
   };
