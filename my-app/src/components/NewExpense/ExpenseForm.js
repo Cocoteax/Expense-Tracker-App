@@ -61,7 +61,7 @@ function ExpenseForm(props) {
     // Note how we extract user input by getting the state values
     let expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: parseFloat(enteredAmount),
       date: new Date(enteredDate),
     };
     // Pass the expenseData to parent component NewExpense by calling the prop function and passing in the required data as the argument
