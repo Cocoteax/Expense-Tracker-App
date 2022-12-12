@@ -19,7 +19,7 @@ function ExpenseItem(props) {
         {/* Use curly braces to dynamically insert data */}
         <div className="expense-item__description">
           <h2>{props.title}</h2>
-          <div className="expense-item__price">{props.amount}</div>
+          <div className="expense-item__price">{`S$ ${props.amount}`}</div>
         </div>
       </Card>
     </li>
