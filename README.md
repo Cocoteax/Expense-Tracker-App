@@ -4,7 +4,7 @@
 Responsive website application that enables users to track and gain insights on their living expenses
 
 ## Tech Stacks Used
-Front-end developed using ReactJS (Developed by separate team) <br/>
+Front-end developed using ReactJS <br/>
 
 ## Installation and Setup Instructions
 **Step 1:** Clone this repository <br/>
