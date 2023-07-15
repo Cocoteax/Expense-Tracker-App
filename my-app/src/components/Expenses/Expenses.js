@@ -6,7 +6,7 @@ import ExpensesList from "./ExpensesList";
 import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
-  const [filteredYear, setFilteredYear] = useState("2020");
+  const [filteredYear, setFilteredYear] = useState("2023");
   // Function to receive selected year from child ExpenseFilter component
   const selectYearHandler = (selectedYear) => {
     // console.log("Inside expenses");
