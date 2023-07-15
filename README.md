@@ -15,4 +15,6 @@ cd my-app
 npm install
 npm start
 ```
+Open http://localhost:3000 to view the application in your browser <br/>
+Alternatively, the application is deployed with github pages [here](https://cocoteax.github.io/Expense-Tracker-App/)
 
